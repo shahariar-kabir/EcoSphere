@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Tree For Sell | Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-background">
+        <div class="floating-leaf"></div>
+        <div class="floating-leaf"></div>
+        <div class="floating-leaf"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tree"></i>
+                <span>Tree For Sell</span>
+            </div>
+            <div class="nav-items">
+                <a href="#" class="nav-item active">Dashboard</a>
+                <a href="#" class="nav-item">Products</a>
+                <a href="#" class="nav-item">Orders</a>
+                <a href="#" class="nav-item">Account</a>
+            </div>
+            <div class="nav-user">
+                <span id="userName">User</span>
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1 class="animate__animated animate__fadeIn">Welcome to Tree For Sell</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-1s">Browse our selection of premium trees and plants</p>
+        </header>
+
+        <div class="search-container animate__animated animate__fadeIn animate__delay-1s">
+            <div class="search-box">
+                <input type="text" placeholder="Search for trees..." id="searchInput">
+                <button type="button" id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <div class="categories animate__animated animate__fadeIn animate__delay-1s">
+            <h2>Tree Categories</h2>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All Trees</button>
+                <button class="filter-btn" data-category="fruit">Fruit Trees</button>
+                <button class="filter-btn" data-category="flowering">Flowering Trees</button>
+                <button class="filter-btn" data-category="ornamental">Ornamental Trees</button>
+                <button class="filter-btn" data-category="timber">Timber Trees</button>
+                <button class="filter-btn" data-category="medicinal">Medicinal Trees</button>
+                <button class="filter-btn" data-category="shade">Shade Trees</button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
